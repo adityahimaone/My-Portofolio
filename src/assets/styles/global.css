@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Nunito&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,18 +14,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.glassmorphism-light {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+.item-group {
+  --xyz-translate-y: -350%;
+  --xyz-ease: cubic-bezier(0.5, -1.5, 0.5, 1.5);
 }
 
-.glassmorphism-dark {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+.text-accent-gradient {
+  background: -webkit-linear-gradient(283deg, #6b5ecd, #7e6ff3, #6b5ecd, #50469a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=global.css.map */

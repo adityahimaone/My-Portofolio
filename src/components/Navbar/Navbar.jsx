@@ -10,6 +10,8 @@ import {
 import { useMediaQuery } from "react-responsive";
 import Menus from "./Menus";
 import ToggleDarkMode from "../toggle/ToggleDarkMode";
+import "@animxyz/core";
+import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -54,28 +56,51 @@ export default function Navbar() {
       className={classNames(
         "fixed w-full transition-all duration-700 z-10 py-2 dark:text-white",
         {
-          "bg-white dark:bg-slate-900 shadow-lg !py-2": backgroundWhite,
+          "bg-white dark:bg-accentDarkMiddle shadow-lg !py-2": backgroundWhite,
         }
       )}
     >
-      <div className="px-4 container mx-auto top-0 flex justify-between items-center">
-        <div className="flex items-center border w-full justify-between">
+      <div className="px-8 container mx-auto top-0 flex justify-between items-center">
+        <div className="flex items-center w-full justify-between">
           <div>
-            <h1 className="text-lg font-semibold">Aditya Himawan</h1>
+            <h1 className="text-lg font-semibold dark:text-accent">
+              adityahimaone
+            </h1>
           </div>
           <div className="hidden gap-8 md:flex">
             <Menus />
           </div>
         </div>
-        <div className="flex items-center  md:px-2">
+        <div className="flex items-center md:px-2">
           <ToggleDarkMode />
         </div>
         <div className="md:hidden text-2xl">
+          {/* <button
+            class={`hamburger hamburger--elastic z-50 transition-all mt-1 hamburger-dark  ${
+              dropdownOpen ? "is-active " : ""
+            }`}
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+            type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+          >
+            <span class="hamburger-box ">
+              <span class="hamburger-inner "></span>
+            </span>
+          </button> */}
           <button
-            className="z-50 p-4 block transition-all"
+            className="z-50 p-2 block transition-all"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
-            {dropdownOpen ? <BsX /> : <BsList />}
+            {dropdownOpen ? (
+              <XyzTransition appear xyz="fade stagger rotate-right-50% front-5">
+                <div>
+                  <BsX className="h-7 w-7" />
+                </div>
+              </XyzTransition>
+            ) : (
+              <BsList className="h-7 w-7" />
+            )}
           </button>
 
           {/* Menu dropdown */}
@@ -90,7 +115,7 @@ export default function Navbar() {
               className="h-screen left-0 bg-black bg-opacity-30"
               onClick={handleBlackScreenClick}
             >
-              <div className="z-20 shadow-xl bg-white p-6">
+              <div className="z-20 shadow-xl bg-white dark:bg-accentDarkMiddle p-6">
                 <div className="mb-4">
                   <Menus />
                 </div>

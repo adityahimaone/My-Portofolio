@@ -8,7 +8,7 @@ export default function DefaultLayout() {
       <header>
         <Navbar />
       </header>
-      <main>
+      <main className="dark:bg-accentDark">
         <Outlet />
       </main>
     </>
