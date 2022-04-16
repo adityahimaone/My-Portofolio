@@ -9,8 +9,8 @@ export default function Index() {
     <div className="relative">
       <ScrollSide />
       <SocialMediaSide />
-      <HeroSection />
-      <ExperienceSection />
+      <HeroSection id="hero" />
+      <ExperienceSection id="experience" />
     </div>
   );
 }
