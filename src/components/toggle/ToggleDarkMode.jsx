@@ -18,14 +18,14 @@ export default function ToggleDarkMode() {
       {isDark && (
         <XyzTransition appear xyz="fade rotate-right ease-out-back">
           <div>
-            <BsSunFill className="w-6 h-6 fill-current text-white" />
+            <BsSunFill className="w-6 h-6 fill-current text-white hover:text-accentMiddle" />
           </div>
         </XyzTransition>
       )}
       {!isDark && (
         <XyzTransition appear xyz="fade rotate-left ease-out-back">
           <div>
-            <BsFillMoonFill className="w-6 h-6 fill-current text-black" />
+            <BsFillMoonFill className="w-6 h-6 fill-current text-black hover:text-accentMiddle" />
           </div>
         </XyzTransition>
       )}
