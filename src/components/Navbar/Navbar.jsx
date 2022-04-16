@@ -14,7 +14,6 @@ import "@animxyz/core";
 import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 import { Sling as Hamburger } from "hamburger-react";
 
-
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [backgroundWhite, setBackgroundWhite] = useState(false);
@@ -65,7 +64,9 @@ export default function Navbar() {
       <div className="px-8 container mx-auto top-0 flex justify-between items-centers">
         <div className="flex items-center w-full justify-between">
           <div>
-            <h1 className="text-lg font-semibold dark:text-accent">my name</h1>
+            <h1 className="text-lg font-semibold dark:text-accent">
+              adityahimaone
+            </h1>
           </div>
           <div className="hidden gap-8 md:flex">
             <Menus />
