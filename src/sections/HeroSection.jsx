@@ -4,6 +4,8 @@ import Scramble from "react-scramble";
 import { Player } from "@lottiefiles/react-lottie-player";
 import HeroAnimate from "../assets/animations/hero2.json";
 import { CgScrollV } from "react-icons/cg";
+import ScrollSide from "../components/Shared/ScrollSide";
+import Fade from "react-reveal/Fade";
 
 export default function HeroSection() {
   return (
@@ -18,7 +20,7 @@ export default function HeroSection() {
           ADITYA HIMAWAN
         </h1>
       </div>
-
+      <ScrollSide />
       <div className="container mx-auto px-8">
         <div className="flex justify-self-end items-center h-screen min-h-screen flex-col-reverse md:flex-row">
           <div className="flex-1 flex justify-center items-center relative">
@@ -43,11 +45,11 @@ export default function HeroSection() {
                   },
                 ]}
               />
-              <XyzTransition appear xyz="fade down-100% back-5">
+              <Fade bottom>
                 <h1 className="font-nunito font-extrabold text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-accent-gradient py-2">
                   Aditya Himawan.
                 </h1>
-              </XyzTransition>
+              </Fade>
               <h2 className="text-2xl md:text-3xl text-accentMiddle dark:text-accentContrast">
                 I'm a Full Stack Developer.
               </h2>
@@ -70,12 +72,14 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="md:flex-1 md:flex items-center justify-center relative">
-            <Player
-              autoplay
-              loop
-              src={HeroAnimate}
-              className="absolute transition-all -top-32 md:top-0 left-14 md:left-0 md:relative h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px]"
-            ></Player>
+            <Fade bottom>
+              <Player
+                autoplay
+                loop
+                src={HeroAnimate}
+                className="absolute transition-all -top-32 md:top-0 left-14 md:left-0 md:relative h-[280px] w-[280px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px]"
+              ></Player>
+            </Fade>
           </div>
         </div>
       </div>

@@ -25,7 +25,6 @@ export default function ScrollSide() {
             to="experience"
             value=""
             spy={true}
-            offset={-70}
             smooth={true}
             duration={500}
           ></Button>
@@ -35,7 +34,7 @@ export default function ScrollSide() {
             activeClass="outline outline-offset-2 outline-accent"
             className="w-3 h-3 bg-slate-500 rounded-full  hover:bg-accent hover:outline hover:outline-offset-2 hover:outline-accent"
             type="submit"
-            to=""
+            to="project"
             value=""
             spy={true}
             smooth={true}
