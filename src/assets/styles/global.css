@@ -23,4 +23,14 @@ code {
   background: -webkit-linear-gradient(283deg, #6b5ecd, #7e6ff3, #6b5ecd, #50469a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.item-group-social-media {
+  --xyz-translate-y: -350%;
+  --xyz-ease: cubic-bezier(0.5, -1.5, 0.5, 1.5);
+}
+
+.circle-bg {
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgba(126, 111, 243, 0.01) 31px), repeating-linear-gradient(rgba(107, 94, 205, 0.21), rgba(80, 70, 154, 0));
+  background-color: rgba(126, 111, 243, 0.01);
 }/*# sourceMappingURL=global.css.map */

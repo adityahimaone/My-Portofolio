@@ -6,11 +6,11 @@ export default function ProjectSection() {
   return (
     <section
       id="project"
-      className="min-h-screen container px-8 flex items-center mx-auto py-10 md:my-0"
+      className="min-h-screen container px-8 flex items-center mx-auto py-20 md:my-0"
     >
       <Fade bottom>
         <div className="mx-auto w-full">
-          <div className="flex px-5 md:justify-center items-center pb-5">
+          <div className="flex md:justify-center items-center pb-5">
             <h1 className="text-4xl dark:text-white">Projects</h1>
           </div>
 
@@ -22,8 +22,8 @@ export default function ProjectSection() {
                 className="object-cover rounded-lg h-60 w-full"
                 alt="img"
               />
-              <div className="absolute bottom-2 left-5 text-white">
-                <h1 className="text-xl ">Name Project</h1>
+              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
+                <h1 className="text-xl ">Hospital Management System</h1>
                 <h1 className="text-md">Description</h1>
               </div>
             </div>
@@ -34,7 +34,20 @@ export default function ProjectSection() {
                 className="object-cover rounded-lg h-60 w-full"
                 alt="img"
               />
-              <div className="absolute bottom-2 left-5 text-white">
+              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
+                <h1 className="text-xl ">Daily Calorie Apps</h1>
+                <h1 className="text-md">Description</h1>
+              </div>
+            </div>
+
+            <div class="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
+              <img
+                src={ProjectImage}
+                className="object-cover rounded-lg h-60 w-full"
+                alt="img"
+              />
+              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
                 <h1 className="text-xl ">Name Project</h1>
                 <h1 className="text-md">Description</h1>
               </div>
@@ -47,24 +60,19 @@ export default function ProjectSection() {
                 className="object-cover rounded-lg h-60 w-full"
                 alt="img"
               />
-              <div className="absolute bottom-2 left-5 text-white">
-                <h1 className="text-xl ">Name Project</h1>
+              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
+                <h1 className="text-xl ">Calories Tracker RESTful API</h1>
                 <h1 className="text-md">Description</h1>
               </div>
             </div>
-
-            <div class="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
-              <img
-                src={ProjectImage}
-                className="object-cover rounded-lg h-60 w-full"
-                alt="img"
-              />
-              <div className="absolute bottom-2 left-5 text-white">
-                <h1 className="text-xl ">Name Project</h1>
-                <h1 className="text-md">Description</h1>
-              </div>
-            </div>
+          </div>
+          <div className="text-center my-5">
+            <a
+              href="/projects"
+              className=" text-accentContrast px-8 py-2 rounded-lg border-2 border-accentContrast hover:bg-accentContrast hover:text-white"
+            >
+              More
+            </a>
           </div>
         </div>
       </Fade>

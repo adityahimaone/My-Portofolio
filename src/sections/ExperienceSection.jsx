@@ -5,11 +5,11 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="min-h-screen container px-8 flex items-center mx-auto py-10 md:my-0"
+      className="container px-8 flex items-center mx-auto py-20 md:my-0"
     >
       <Fade bottom>
-        <div className="mx-auto bg-gradient-to-b from-transparent to-accent/20 p-4 rounded-lg">
-          <div className="flex px-5 md:justify-center items-center pb-5">
+        <div className="mx-auto bg-gradient-to-b from-transparent to-accent/10 p-4 rounded-lg">
+          <div className="flex md:justify-center items-center pb-5">
             <h1 className="text-4xl dark:text-white">Experience</h1>
           </div>
           <div>
@@ -17,7 +17,9 @@ export default function ExperienceSection() {
               <div class="flex flex-row-reverse md:contents">
                 <div class="bg-accent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md hover:scale-[1.03] transition-all duration-300">
                   <h5>Feb 2021 - Jul 2021</h5>
-                  <h3 class="font-semibold text-lg mb-1">Bangkit Academy</h3>
+                  <h3 class="font-semibold text-lg mb-1">
+                    Bangkit Academy (Cloud Computing)
+                  </h3>
                   <h6 className="text-black text-sm">
                     Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka
                   </h6>
