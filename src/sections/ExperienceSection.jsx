@@ -4,7 +4,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="min-h-screen container px-8 flex items-center mx-auto my-10 md:my-0"
+      className="min-h-screen container px-8 flex items-center mx-auto py-10 md:my-0"
     >
       <div className="mx-auto">
         <div className="flex px-5 md:justify-center items-center pb-5">
