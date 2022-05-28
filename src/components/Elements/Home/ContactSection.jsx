@@ -2,10 +2,10 @@ import React from "react";
 import { BsGithub, BsLinkedin, BsTwitter, BsInstagram } from "react-icons/bs";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
-import Pattren1 from "../assets/images/pattren1.png";
-import Pattren2 from "../assets/images/pattren2.png";
-import Pattren3 from "../assets/images/pattren3.png";
-import Planet from "../assets/images/planet.png";
+import Pattren1 from "@/assets/images/pattren1.png";
+import Pattren2 from "@/assets/images/pattren2.png";
+import Pattren3 from "@/assets/images/pattren3.png";
+import Planet from "@/assets/images/planet.png";
 
 export default function ContactSection() {
   return (
