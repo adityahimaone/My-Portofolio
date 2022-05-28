@@ -1,9 +1,9 @@
 import React from "react";
-import ExperienceSection from "../sections/ExperienceSection";
-import HeroSection from "../sections/HeroSection";
-import SocialMediaSide from "../components/Shared/SocialMediaSide";
-import ProjectSection from "../sections/ProjectSection";
-import ContactSection from "../sections/ContactSection";
+import SocialMediaSide from "@/components/UI/SocialMediaSide/SocialMediaSide";
+import HeroSection from "@/components/Elements/Home/HeroSection";
+import ExperienceSection from "@/components/Elements/Home/ExperienceSection";
+import ProjectSection from "@/components/Elements/Home/ProjectSection";
+import ContactSection from "@/components/Elements/Home/ContactSection";
 
 export default function Index() {
   return (

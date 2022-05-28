@@ -9,7 +9,7 @@ import {
 } from "react-icons/bs";
 import { useMediaQuery } from "react-responsive";
 import Menus from "./Menus";
-import ToggleDarkMode from "../toggle/ToggleDarkMode";
+import ToggleDarkMode from "@/components/UI/Button/ToggleDarkMode";
 import "@animxyz/core";
 import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 import { Sling as Hamburger } from "hamburger-react";

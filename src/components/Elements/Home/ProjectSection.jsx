@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectImage from "../assets/images/project.jpg";
+import ProjectImage from "@/assets/images/project.jpg";
 import Fade from "react-reveal/Fade";
 
 export default function ProjectSection() {
@@ -14,8 +14,8 @@ export default function ProjectSection() {
             <h1 className="text-4xl dark:text-white">Projects</h1>
           </div>
 
-          <div class="grid gap-6 md:grid-cols-2 2xl:mx-20">
-            <div class="min-w-0 bg-accent rounded-xl shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+          <div className="grid gap-6 md:grid-cols-2 2xl:mx-20">
+            <div className="min-w-0 bg-accent rounded-xl shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
               <img
                 src={ProjectImage}
@@ -27,7 +27,7 @@ export default function ProjectSection() {
                 <h1 className="text-md">Description</h1>
               </div>
             </div>
-            <div class="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
               <img
                 src={ProjectImage}
@@ -40,7 +40,7 @@ export default function ProjectSection() {
               </div>
             </div>
 
-            <div class="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
               <img
                 src={ProjectImage}
@@ -53,7 +53,7 @@ export default function ProjectSection() {
               </div>
             </div>
 
-            <div class="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
               <img
                 src={ProjectImage}

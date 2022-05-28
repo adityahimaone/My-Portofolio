@@ -2,13 +2,13 @@ import React from "react";
 import { XyzTransition } from "@animxyz/react";
 import Scramble from "react-scramble";
 import { Player } from "@lottiefiles/react-lottie-player";
-import HeroAnimate from "../assets/animations/hero2.json";
+import HeroAnimate from "@/assets/animations/hero2.json";
 import { CgScrollV } from "react-icons/cg";
-import ScrollSide from "../components/Shared/ScrollSide";
+import ScrollSide from "@/components/UI/ScrollSide/ScrollSide";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll/modules";
-import CircleGroup from "../assets/images/circle2.png";
-import Line1 from "../assets/images/line1.png";
+import CircleGroup from "@/assets/images/circle2.png";
+import Line1 from "@/assets/images/line1.png";
 
 export default function HeroSection() {
   return (
@@ -76,11 +76,11 @@ export default function HeroSection() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  class="relative rounded-lg inline-block px-10 py-3 overflow-hidden border border-accentContrast group focus:outline-none focus:ring"
+                  className="relative rounded-lg inline-block px-10 py-3 overflow-hidden border border-accentContrast group focus:outline-none focus:ring"
                 >
-                  <span class="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
+                  <span className="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
 
-                  <span class="relative text-sm font-medium text-accentContrast transition-colors group-hover:text-white">
+                  <span className="relative text-sm font-medium text-accentContrast transition-colors group-hover:text-white">
                     Contact Me!
                   </span>
                 </Link>
