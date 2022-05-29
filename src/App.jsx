@@ -1,4 +1,4 @@
-import RoutesPage from "@/routes/Routes";
+import RoutesPage from "./routes/Routes";
 import "@animxyz/core";
 
 function App() {
