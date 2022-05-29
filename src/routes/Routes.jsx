@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "../pages/Index";
-import Projects from "../pages/Projects";
+import Projects from "../pages/projects";
 import DefaultLayout from "../components/Layouts/Default";
 
 export default function RoutesPage() {
