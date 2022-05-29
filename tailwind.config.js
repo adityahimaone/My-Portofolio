@@ -23,6 +23,9 @@ module.exports = {
         green: "#28C165",
         red: "#F4574D",
       },
+      boxShadow: {
+        "accent-glow": "0 0 21.5px -6px rgba(120, 27, 236, 0.81);",
+      },
     },
   },
   plugins: [],

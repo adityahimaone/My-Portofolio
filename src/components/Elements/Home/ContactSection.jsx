@@ -13,11 +13,11 @@ export default function ContactSection() {
       id="contact"
       className="min-h-screen container px-8 flex items-center mx-auto py-20 md:my-0 relative"
     >
-      <img
+      {/* <img
         src={Pattren1}
         alt=""
         className="absolute w-12 h-auto top-16 right-0 opacity-50 -z-[10]"
-      />
+      /> */}
       <img
         src={Pattren2}
         alt=""

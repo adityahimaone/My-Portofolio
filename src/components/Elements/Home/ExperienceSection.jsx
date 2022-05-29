@@ -13,9 +13,9 @@ export default function ExperienceSection() {
             <h1 className="text-4xl dark:text-white">Experience</h1>
           </div>
           <div>
-            <div className="flex flex-col md:grid grid-cols-9 mx-auto md:px-2 text-white">
+            <div className="flex flex-col md:grid grid-cols-9 mx-auto md:px-8 text-white">
               <div className="flex flex-row-reverse md:contents">
-                <div className="bg-accent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md hover:scale-[1.03] transition-all duration-300">
+                <div className="bg-accent w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md hover:scale-[1.03] transition-all duration-300">
                   <h5>Feb 2021 - Jul 2021</h5>
                   <h3 className="font-semibold text-lg mb-1">
                     Bangkit Academy (Cloud Computing)
@@ -24,8 +24,8 @@ export default function ExperienceSection() {
                     Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka
                   </h6>
                   <p className="leading-tight text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi, quaerat?
+                    Make an simple API and integrate with Firebase and deploy in
+                    Google Cloud
                   </p>
                 </div>
                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-2 md:mr-10">
@@ -42,7 +42,7 @@ export default function ExperienceSection() {
                   </div>
                   <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-accent shadow"></div>
                 </div>
-                <div className="bg-accent col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md hover:scale-[1.03] transition-all duration-300">
+                <div className="bg-accent w-full col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md hover:scale-[1.03] transition-all duration-300">
                   <h5>Aug 2021 - Jan 2022</h5>
                   <h3 className="font-semibold text-lg mb-1">
                     Fullstack Engineering
@@ -51,14 +51,13 @@ export default function ExperienceSection() {
                     Kampus Merdeka By Alterra Academy
                   </h6>
                   <p className="leading-tight text-justify">
-                    Fullstack Engineering student at Alterra Academy held by
-                    Kampus Merdeka with Curriculum Backend Golang and Frontend
-                    ReactJs
+                    Make BE RESTful API with Golang and FE APP with ReactJS,
+                    like app Calories Tracker & Hospital Management System
                   </p>
                 </div>
               </div>
               <div className="flex flex-row-reverse md:contents">
-                <div className="bg-accent col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md hover:scale-[1.03] transition-all duration-300">
+                <div className="bg-accent w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md hover:scale-[1.03] transition-all duration-300">
                   <h5>Feb 2022 - Now</h5>
                   <h3 className="font-semibold text-lg mb-1">
                     Frontend Developer
@@ -67,8 +66,8 @@ export default function ExperienceSection() {
                     Kampus Merdeka By Binar Academy
                   </h6>
                   <p className="leading-tight text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi, quaerat?
+                    Learning Frontend Stack using NodeJS EJS, ReactJS & NextJS,
+                    Make a FE APP Car Booking
                   </p>
                 </div>
                 <div className="col-start-5 col-end-6 md:mx-auto relative mr-2 md:mr-10">

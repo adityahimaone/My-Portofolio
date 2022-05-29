@@ -1,8 +1,15 @@
 import React from "react";
 import ProjectImage from "@/assets/images/project.jpg";
 import Fade from "react-reveal/Fade";
+import { useNavigate } from "react-router-dom";
+import PrimaryOutlineButton from "@/components/UI/Button/PrimaryOutlineButton";
 
 export default function ProjectSection() {
+  const navigate = useNavigate();
+
+  const handleGoPageProjects = () => {
+    navigate("/projects");
+  };
   return (
     <section
       id="project"
@@ -67,12 +74,9 @@ export default function ProjectSection() {
             </div>
           </div>
           <div className="text-center my-5">
-            <a
-              href="/projects"
-              className=" text-accentContrast px-8 py-2 rounded-lg border-2 border-accentContrast hover:bg-accentContrast hover:text-white"
-            >
+            <PrimaryOutlineButton onClick={handleGoPageProjects}>
               More
-            </a>
+            </PrimaryOutlineButton>
           </div>
         </div>
       </Fade>

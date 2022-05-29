@@ -50,3 +50,7 @@ code {
     repeating-linear-gradient(rgba(107, 94, 205, 0.21), rgba(80, 70, 154, 0));
   background-color: rgba(126, 111, 243, 0.01);
 }
+
+.stack-icon {
+  @apply w-7 h-7 text-accentMiddle;
+}

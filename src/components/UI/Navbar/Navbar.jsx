@@ -13,8 +13,11 @@ import ToggleDarkMode from "@/components/UI/Button/ToggleDarkMode";
 import "@animxyz/core";
 import { XyzTransition, XyzTransitionGroup } from "@animxyz/react";
 import { Sling as Hamburger } from "hamburger-react";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [backgroundWhite, setBackgroundWhite] = useState(false);
 
@@ -52,15 +55,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleWindowScroll);
   }, []);
 
+  const cx = classNames(
+    "fixed w-full transition-all duration-700 z-10 py-2 dark:text-white",
+    {
+      "bg-white dark:bg-accentDarkMiddle shadow-lg !py-2": backgroundWhite,
+      "shadow-lg": location.pathname === "/projects",
+    }
+  );
+
   return (
-    <nav
-      className={classNames(
-        "fixed w-full transition-all duration-700 z-10 py-2 dark:text-white",
-        {
-          "bg-white dark:bg-accentDarkMiddle shadow-lg !py-2": backgroundWhite,
-        }
-      )}
-    >
+    <nav className={cx}>
       <div className="px-8 container mx-auto top-0 flex justify-between items-centers">
         <div className="flex items-center w-full justify-between">
           <div>
@@ -76,33 +80,6 @@ export default function Navbar() {
           <ToggleDarkMode />
         </div>
         <div className="md:hidden text-2xl">
-          {/* <button
-            class={`hamburger hamburger--elastic z-50 transition-all mt-1 hamburger-dark  ${
-              dropdownOpen ? "is-active " : ""
-            }`}
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-            type="button"
-            aria-label="Menu"
-            aria-controls="navigation"
-          >
-            <span class="hamburger-box ">
-              <span class="hamburger-inner "></span>
-            </span>
-          </button> */}
-          {/* <button
-            className="z-50 p-2 block transition-all"
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-          >
-            {dropdownOpen ? (
-              <XyzTransition appear xyz="fade stagger rotate-right-50% front-5">
-                <div>
-                  <BsX className="h-7 w-7" />
-                </div>
-              </XyzTransition>
-            ) : (
-              <BsList className="h-7 w-7" />
-            )}
-          </button> */}
           <Hamburger
             size={25}
             toggled={dropdownOpen}
