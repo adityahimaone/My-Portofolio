@@ -9,12 +9,13 @@ import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll/modules";
 import CircleGroup from "@/assets/images/circle2.png";
 import Line1 from "@/assets/images/line1.png";
+import PrimaryButton from "@/components/UI/Button/PrimaryButton";
 
 export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative circle-bg bg-gradient-to-br from-transparent via-accent/40 dark:via-accent/5 to-accentContrast/30 dark:to-accentContrast/10 pt-[60px]  pb-28 overflow-hidden h-screen  dark:text-white"
+      className="relative circle-bg bg-gradient-to-br from-transparent via-accent/40 dark:via-accent/5 to-accentContrast/30 dark:to-accentContrast/10 overflow-hidden  min-h-screen dark:text-white"
     >
       <span className="absolute bg-purple-400 dark:bg-blue -left-28 -top-28 rounded-full opacity-[20%] dark:opacity-[100%] blur-3xl aspect-square h-[350px] -z-10 animate-pulse" />
       <span className="absolute bg-gradient-to-br from-primary to-secondarys -right-28 -bottom-28 rounded-full opacity-[15%] dark:opacity-[100%] blur-3xl delay-700 duration-1000 aspect-square h-[550px] -z-10" />
@@ -70,20 +71,28 @@ export default function HeroSection() {
                 I'm a final year student who likes programming, Currently
                 focused in frontend developer using ReactJS.
               </p>
-              <div>
-                <Link
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  className="relative rounded-lg inline-block px-10 py-3 overflow-hidden border border-accentContrast group focus:outline-none focus:ring"
-                >
-                  <span className="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
-
-                  <span className="relative text-sm font-medium text-accentContrast transition-colors group-hover:text-white">
-                    Contact Me!
-                  </span>
-                </Link>
+              <div className="flex justify-start">
+                <div className="flex space-x-2 ">
+                  <Link
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="relative rounded-lg inline-block px-8 py-3 overflow-hidden border border-accentContrast group focus:outline-none focus:ring"
+                  >
+                    <span className="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
+                    <p className="relative text-md text-center font-medium text-accentContrast transition-colors group-hover:text-white">
+                      Contact Me!
+                    </p>
+                  </Link>
+                  <a
+                    target="_blank"
+                    href=""
+                    className="p-3 bg-accent rounded-lg text-center text-white hover:bg-white hover:text-accent border-2 border-accent"
+                  >
+                    Download Resume
+                  </a>
+                </div>
               </div>
             </div>
           </div>

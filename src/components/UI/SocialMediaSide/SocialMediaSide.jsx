@@ -4,7 +4,7 @@ import { XyzTransitionGroup } from "@animxyz/react";
 
 export default function SocialMediaSide() {
   return (
-    <div className="width-[40px] hidden xl:block md:fixed left-10 bottom-0 right-auto after:block after:h-[150px] after:w-1 after:bg-accentContrast after:dark:bg-white after:mx-auto after:mt-5">
+    <div className="width-[40px] z-50 hidden 2xl:block md:fixed left-10 bottom-0 right-auto after:block after:h-[150px] after:w-1 after:bg-accentContrast after:dark:bg-white after:mx-auto after:mt-5">
       <XyzTransitionGroup
         appear
         className="item-group"
@@ -12,16 +12,24 @@ export default function SocialMediaSide() {
       >
         <ul className="flex flex-col align-middle space-y-6 text-accentContrast dark:text-white ">
           <li>
-            <BsGithub className="w-6 h-6 fill-current" />
+            <a target="_blank" href="https://github.com/adityahimaone">
+              <BsGithub className="w-6 h-6 fill-current hover:scale-125 transition-all" />
+            </a>
           </li>
           <li>
-            <BsLinkedin className="w-6 h-6 fill-current" />
+            <a target="_blank" href="https://linkedin.com/in/adityahimaone">
+              <BsLinkedin className="w-6 h-6 fill-current hover:scale-125 transition-all" />
+            </a>
           </li>
           <li>
-            <BsTwitter className="w-6 h-6 fill-current" />
+            <a target="_blank" href="https://twitter.com/adityahimaone">
+              <BsTwitter className="w-6 h-6 fill-current hover:scale-125 transition-all" />
+            </a>
           </li>
           <li>
-            <BsInstagram className="w-6 h-6 fill-current" />
+            <a target="_blank" href="https://instagram.com/adityahimaone">
+              <BsInstagram className="w-6 h-6 fill-current hover:scale-125 transition-all" />
+            </a>
           </li>
         </ul>
       </XyzTransitionGroup>
