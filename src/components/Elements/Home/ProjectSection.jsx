@@ -23,12 +23,14 @@ export default function ProjectSection() {
         "RESTful API for Track Calories using Harrist-Bennedict Equation, Clean Architecture & ORM.",
       image:
         "https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Web-Service-What-is-REST-API-And-How-Does-it-Work-1024x576.png",
+      url: "https://github.com/adityahimaone/daily-tracker-calories-api",
     },
     {
       id: 2,
       title: "Simple Calories Tracker APP",
       description: "A simple calories tracker using ReactJS & Graphql.",
       image: TrackerCaloriesIMG,
+      url: "https://github.com/adityahimaone/FE-CaloriesTracker",
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ export default function ProjectSection() {
       description:
         "Application for Manage Hospital such as Booking, Management Employee, Management Schedule, & Management Patient.",
       image: HospitalIMG,
+      url: "https://github.com/adityahimaone/FE-Hospital-Management-System",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export default function ProjectSection() {
       description:
         "Application for Tracking, Count Calories Food Consumed Every Day & Meal Plans integrate with Open API.",
       image: DailyCaloriesIMG,
+      url: "https://github.com/adityahimaone/Daily-Calorie-Apps",
     },
   ];
 
@@ -64,6 +68,7 @@ export default function ProjectSection() {
                 title={project.title}
                 description={project.description}
                 image={project.image}
+                url={project.url}
               />
             ))}
           </div>

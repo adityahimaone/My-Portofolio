@@ -1,9 +1,13 @@
 import React from "react";
 import ProjectImage from "@/assets/images/project.jpg";
 
-function CardProjectSection({ title, image, description }) {
+function CardProjectSection({ title, image, description, url }) {
   return (
-    <div className="min-w-0 bg-accent rounded-lg drop-shadow-xl dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
+    <a
+      target="_blank"
+      href={url}
+      className="min-w-0 bg-accent rounded-lg drop-shadow-xl dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
       <img
         src={image ? image : ProjectImage}
@@ -14,7 +18,7 @@ function CardProjectSection({ title, image, description }) {
         <h1 className="text-xl ">{title ? title : "Title"}</h1>
         <h1 className="text-md">{description ? description : "description"}</h1>
       </div>
-    </div>
+    </a>
   );
 }
 

@@ -4,7 +4,7 @@ import { XyzTransitionGroup } from "@animxyz/react";
 
 export default function SocialMediaSide() {
   return (
-    <div className="width-[40px] z-50 hidden xl:block md:fixed left-10 bottom-0 right-auto after:block after:h-[150px] after:w-1 after:bg-accentContrast after:dark:bg-white after:mx-auto after:mt-5">
+    <div className="width-[40px] z-50 hidden 2xl:block md:fixed left-10 bottom-0 right-auto after:block after:h-[150px] after:w-1 after:bg-accentContrast after:dark:bg-white after:mx-auto after:mt-5">
       <XyzTransitionGroup
         appear
         className="item-group"
