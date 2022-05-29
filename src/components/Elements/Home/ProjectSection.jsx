@@ -3,6 +3,10 @@ import ProjectImage from "@/assets/images/project.jpg";
 import Fade from "react-reveal/Fade";
 import { useNavigate } from "react-router-dom";
 import PrimaryOutlineButton from "@/components/UI/Button/PrimaryOutlineButton";
+import CardProjectSection from "./CardProjectSection";
+import DailyCaloriesIMG from "@/assets/images/dailycalories.png";
+import HospitalIMG from "@/assets/images/hospital.png";
+import TrackerCaloriesIMG from "@/assets/images/trackercalories.png";
 
 export default function ProjectSection() {
   const navigate = useNavigate();
@@ -10,6 +14,38 @@ export default function ProjectSection() {
   const handleGoPageProjects = () => {
     navigate("/projects");
   };
+
+  const listPorjects = [
+    {
+      id: 1,
+      title: "Tracker Calories API",
+      description:
+        "RESTful API for Track Calories using Harrist-Bennedict Equation, Clean Architecture & ORM.",
+      image:
+        "https://19yw4b240vb03ws8qm25h366-wpengine.netdna-ssl.com/wp-content/uploads/Web-Service-What-is-REST-API-And-How-Does-it-Work-1024x576.png",
+    },
+    {
+      id: 2,
+      title: "Simple Calories Tracker APP",
+      description: "A simple calories tracker using ReactJS & Graphql.",
+      image: TrackerCaloriesIMG,
+    },
+    {
+      id: 3,
+      title: "Hospital Management System",
+      description:
+        "Application for Manage Hospital such as Booking, Management Employee, Management Schedule, & Management Patient.",
+      image: HospitalIMG,
+    },
+    {
+      id: 4,
+      title: "Daily Calories APP",
+      description:
+        "Application for Tracking, Count Calories Food Consumed Every Day & Meal Plans integrate with Open API.",
+      image: DailyCaloriesIMG,
+    },
+  ];
+
   return (
     <section
       id="project"
@@ -22,56 +58,14 @@ export default function ProjectSection() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 2xl:mx-20">
-            <div className="min-w-0 bg-accent rounded-xl shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
-              <img
-                src={ProjectImage}
-                className="object-cover rounded-lg h-60 w-full"
-                alt="img"
+            {listPorjects.map((project) => (
+              <CardProjectSection
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                image={project.image}
               />
-              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
-                <h1 className="text-xl ">Hospital Management System</h1>
-                <h1 className="text-md">Description</h1>
-              </div>
-            </div>
-            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
-              <img
-                src={ProjectImage}
-                className="object-cover rounded-lg h-60 w-full"
-                alt="img"
-              />
-              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
-                <h1 className="text-xl ">Daily Calorie Apps</h1>
-                <h1 className="text-md">Description</h1>
-              </div>
-            </div>
-
-            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
-              <img
-                src={ProjectImage}
-                className="object-cover rounded-lg h-60 w-full"
-                alt="img"
-              />
-              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
-                <h1 className="text-xl ">Name Project</h1>
-                <h1 className="text-md">Description</h1>
-              </div>
-            </div>
-
-            <div className="min-w-0 bg-accent rounded-lg shadow-lg dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
-              <img
-                src={ProjectImage}
-                className="object-cover rounded-lg h-60 w-full"
-                alt="img"
-              />
-              <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
-                <h1 className="text-xl ">Calories Tracker RESTful API</h1>
-                <h1 className="text-md">Description</h1>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="text-center my-5">
             <PrimaryOutlineButton onClick={handleGoPageProjects}>
