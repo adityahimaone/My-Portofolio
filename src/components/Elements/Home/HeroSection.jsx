@@ -68,11 +68,11 @@ export default function HeroSection() {
                 I'm a Junior Full Stack Developer.
               </h2>
               <p className="max-w-lg">
-                I'm a final year student who likes programming, Currently
-                focused in frontend developer using ReactJS.
+                I'm a final year student who likes programming. Currently,
+                focused on frontend developers using ReactJS.
               </p>
               <div className="flex justify-start">
-                <div className="flex space-x-2 ">
+                <div className="flex space-x-2 z-10">
                   <Link
                     to="contact"
                     spy={true}
@@ -80,14 +80,17 @@ export default function HeroSection() {
                     duration={500}
                     className="relative rounded-lg inline-block px-8 py-3 overflow-hidden border border-accentContrast group focus:outline-none focus:ring"
                   >
-                    <span className="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
-                    <p className="relative text-md text-center font-medium text-accentContrast transition-colors group-hover:text-white">
-                      Contact Me!
-                    </p>
+                    <button id="goContactSection">
+                      <span className="absolute inset-y-0 left-0 w-[0px] transition-all bg-accentContrast group-hover:w-full group-active:bg-accent"></span>
+                      <p className="relative text-md text-center font-medium text-accentContrast transition-colors group-hover:text-white">
+                        Contact Me!
+                      </p>
+                    </button>
                   </Link>
                   <a
+                    id="goResumeLink"
                     target="_blank"
-                    href=""
+                    href="https://drive.google.com/file/d/1zq6mxvCL61efevw5qCNzTUXw4B1Gpjc2/view?usp=sharing"
                     className="p-3 bg-accent rounded-lg text-center text-white hover:bg-white hover:text-accent border-2 border-accent"
                   >
                     Download Resume

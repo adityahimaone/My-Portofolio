@@ -4,6 +4,7 @@ function CardProjects({ dev, title, desc, stack, emot, url }) {
   return (
     <a
       target="_blank"
+      id="link-project"
       href={url}
       className="w-full rounded-lg border-2 border-accent dark:hover:border-white shadow-accent-glow p-8 flex justify-between transition-all hover:scale-[1.01]"
     >
