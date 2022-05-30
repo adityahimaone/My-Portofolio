@@ -20,17 +20,17 @@ export default function ContactSection() {
       /> */}
       <img
         src={Pattren2}
-        alt=""
+        alt="pattren3"
         className="absolute bottom-0 md:left-32 w-48 h-auto opacity-50 -z-[10]"
       />
       <img
         src={Pattren3}
-        alt=""
+        alt="pattren3"
         className="absolute top-0 -left-10 lg:left-40 w-28 lg:w-44 h-auto opacity-40 -z-[10]"
       />
       <img
         src={Planet}
-        alt=""
+        alt="planet-img"
         className="absolute hidden md:block top-32 right-32 w-52 h-auto opacity-50 -z-[10]"
       />
       <div className="mx-auto w-full bg-gradient-to-b from-transparent to-accent/10 rounded-lg px-2 md:py-48">
@@ -40,8 +40,8 @@ export default function ContactSection() {
         <div className="max-w-xl mx-auto">
           <Fade bottom>
             <p className="text-lg text-justify leading-normal dark:text-white">
-              Hello, how are you 👋, I'm usually called adit, I'm currently
-              working on and exploring frontend developer. I enjoy using
+              Hello, how are you 👋. I'm usually called Adit. I'm currently
+              working on and exploring frontend developers. I enjoy using
               Tailwindcss and ReactJS. I can be contacted via the platform
               below.
             </p>
@@ -69,13 +69,21 @@ export default function ContactSection() {
                   Linkedin
                 </p>
               </a>
-              <a href="http://" target="_blank" className="group relative">
+              <a
+                href="http://www.twitter.com/adityahimaone"
+                target="_blank"
+                className="group relative"
+              >
                 <BsTwitter className="text-3xl dark:text-white group-hover:text-accentMiddle hover:scale-110 transition-all duration-200" />
                 <p className="absolute hidden -inset-x-6 -bottom-10 bg-accent text-white text-center py-1 rounded-md group-hover:block transition-all duration-300">
                   Twitter
                 </p>
               </a>
-              <a href="http://" target="_blank" className="group relative">
+              <a
+                href="http://www.instagram.com/adityahimaone"
+                target="_blank"
+                className="group relative"
+              >
                 <BsInstagram className="text-3xl dark:text-white group-hover:text-accentMiddle hover:scale-110 transition-all duration-200" />
                 <p className="absolute hidden -inset-x-6 -bottom-10 bg-accent text-white text-center py-1 rounded-md group-hover:block transition-all duration-300">
                   Instagram

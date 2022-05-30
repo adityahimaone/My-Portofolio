@@ -9,6 +9,7 @@ import {
   SiGraphql,
   SiMaterialui,
   SiRedux,
+  SiVite,
 } from "react-icons/si";
 
 export const projectList = [
@@ -81,5 +82,19 @@ export const projectList = [
     ],
     emot: "🚗",
     url: "https://github.com/adityahimaone/next-data-media-handling",
+  },
+  {
+    id: 6,
+    dev: "frontend",
+    title: "Expenses Tracker APP",
+    desc: "Simple Application for Expenses Management",
+    stack: [
+      <SiVite className="stack-icon" />,
+      <SiReact className="stack-icon" />,
+      <SiTailwindcss className="stack-icon" />,
+      <SiRedux className="stack-icon" />,
+    ],
+    emot: "💸",
+    url: "https://github.com/adityahimaone/FE-Expenses-Tracker",
   },
 ];
