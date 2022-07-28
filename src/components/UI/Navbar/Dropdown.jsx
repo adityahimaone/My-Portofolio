@@ -6,27 +6,20 @@ import ClickOutComponent from "react-onclickout";
 export default function Dropdown({ children }) {
   const [open, setOpen] = useState(false);
   return (
-    <div
-      className="w-full relative group"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
+    <div className="group relative w-full" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
       <span
-        className="hover:text-primary py-2 cursor-pointer flex items-center justify-between"
+        className="flex cursor-pointer items-center justify-between py-2 hover:text-primary"
         onClick={() => setOpen(!open)}
       >
         Product
-        <BsChevronDown className="inline ml-2" />
+        <BsChevronDown className="ml-2 inline" />
       </span>
       <ClickOutComponent onClickOut={() => open && setOpen(false)}>
         <div
-          className={classNames(
-            "lg:absolute top-full shadow-lg -left-1/2 -right-1/2 rounded-lg bg-white",
-            {
-              "opacity-100 visible h-full lg:h-auto py-4 px-6": open,
-              "opacity-0 invisible h-0": !open,
-            }
-          )}
+          className={classNames("top-full -left-1/2 -right-1/2 rounded-lg bg-white shadow-lg lg:absolute", {
+            "visible h-full py-4 px-6 opacity-100 lg:h-auto": open,
+            "invisible h-0 opacity-0": !open,
+          })}
         >
           {children}
         </div>

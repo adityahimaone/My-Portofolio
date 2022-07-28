@@ -1,22 +1,22 @@
-import React from "react";
-import ProjectImage from "@/assets/images/project.jpg";
+import React from 'react';
+import ProjectImage from '@/assets/images/project.jpg';
 
 function CardProjectSection({ title, image, description, url }) {
   return (
     <a
       target="_blank"
       href={url}
-      className="min-w-0 bg-accent rounded-lg drop-shadow-xl dark:bg-gray-800 relative hover:scale-[1.02] transition-all duration-300"
+      className="dark:bg-gray-800 relative min-w-0 rounded-lg bg-accent drop-shadow-xl transition-all duration-300 hover:scale-[1.02]"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black w-full h-full rounded-lg"></div>
+      <div className="absolute inset-0 h-full w-full rounded-lg bg-gradient-to-b from-transparent to-black"></div>
       <img
         src={image ? image : ProjectImage}
-        className="object-cover rounded-lg h-60 w-full"
+        className="h-60 w-full rounded-lg object-cover"
         alt="img"
       />
-      <div className="absolute bottom-2 inset-x-2 md:inset-x-5 text-white">
-        <h1 className="text-xl ">{title ? title : "Title"}</h1>
-        <h1 className="text-md">{description ? description : "description"}</h1>
+      <div className="absolute inset-x-2 bottom-2 text-white md:inset-x-5">
+        <h1 className="text-xl ">{title ? title : 'Title'}</h1>
+        <h1 className="text-md">{description ? description : 'description'}</h1>
       </div>
     </a>
   );
