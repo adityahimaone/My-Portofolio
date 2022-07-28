@@ -5,10 +5,10 @@ import Fade from "react-reveal/Fade";
 
 function Projects() {
   return (
-    <div className="pt-16 container min-h-screen max-w-screen-lg mx-auto px-8 dark:text-white">
+    <div className="container mx-auto min-h-screen max-w-screen-lg px-8 pt-16 dark:text-white">
       <Fade bottom>
         <div>
-          <h1 className="text-3xl font-bold py-4">Projects</h1>
+          <h1 className="py-4 text-3xl font-bold">Projects</h1>
         </div>
         <div className="space-y-5">
           {projectList.reverse().map((item) => (
@@ -27,7 +27,7 @@ function Projects() {
           <a
             target="_blank"
             href="https://github.com/adityahimaone"
-            className="relative rounded-lg inline-block px-10 py-3 overflow-hidden shadow-accent-glow border-2 border-accentContrast hover:bg-accent group focus:outline-none focus:ring"
+            className="group relative inline-block overflow-hidden rounded-lg border-2 border-accentContrast px-10 py-3 shadow-accent-glow hover:bg-accent focus:outline-none focus:ring"
           >
             More Projects
           </a>

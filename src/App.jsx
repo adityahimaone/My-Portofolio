@@ -1,5 +1,5 @@
-import RoutesPage from "@/routes/Routes";
-import "@animxyz/core";
+import RoutesPage from '@/routes/Routes';
+import '@animxyz/core';
 
 function App() {
   return (
